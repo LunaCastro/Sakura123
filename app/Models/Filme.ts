@@ -1,6 +1,5 @@
 import { DateTime } from 'luxon'
 import { BaseModel, column,  } from '@ioc:Adonis/Lucid/Orm'
-import User from './User'
 
 export default class Filmes extends BaseModel {
   @column({ isPrimary: true })
@@ -14,6 +13,12 @@ export default class Filmes extends BaseModel {
 
  @column()
  public data: string 
+
+ @column.dateTime ({autoCreate: true})
+ public createdAt: DateTime
+
+ @column.dateTime ({autoCreate: true, autoUpdate:true})
+ public user: DateTime
 
 
 
