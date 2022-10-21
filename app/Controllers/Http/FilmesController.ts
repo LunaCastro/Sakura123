@@ -32,7 +32,7 @@ export default class FilmesController {
         return topic
   
       } catch (error) {
-        response.status(400).send("Tópico não encontrado!!!")
+        response.status(400).send("Titulo não encontrado!!!")
       }
     }
   

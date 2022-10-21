@@ -24,6 +24,11 @@ export default class RegisterUserValidator {
    *    ```
    */
   public schema = schema.create({
+    
+    avaliacao: schema.string({}, [
+      rules.required()
+    ]),
+
     nome_filme: schema.string({}, [
       rules.required()
     ]),
