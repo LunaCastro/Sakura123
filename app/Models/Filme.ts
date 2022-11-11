@@ -16,7 +16,7 @@ export default class Filmes extends BaseModel {
  public nome_tipo: string  
 
  @column ()
- public avaliacao: string
+ public avaliação_do_filme: string
 
  @column.dateTime ({autoCreate: true})
  public createdAt: DateTime

@@ -9,6 +9,7 @@ export default class extends BaseSchema {
       table.string ('nome_filme')
       table.string ('nome_tipo')
       table.string ('data')
+      table.string ('avaliação_do_filme')
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
        */
