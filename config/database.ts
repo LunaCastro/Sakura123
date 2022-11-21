@@ -63,11 +63,14 @@ const databaseConfig: DatabaseConfig = {
     pg: {
       client: 'pg',
       connection: {
-        host: Env.get('PG_HOST'),
-        port: Env.get('PG_PORT'),
-        user: Env.get('PG_USER'),
-        password: Env.get('PG_PASSWORD', ''),
-        database: Env.get('PG_DB_NAME'),
+        host: Env.get('localhost'),
+        port: Env.get('3306'),
+        user: Env.get('alunos'),
+        password: Env.get('cefetmg', ''),
+        database: Env.get('Lunaweb'),
+        ssl: {
+          rejectUnauthorized: false
+        }
       },
       migrations: {
         naturalSort: true,
